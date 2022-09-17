@@ -1,0 +1,158 @@
+body{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+h1{
+    Font-Family: 'Raleway', Sans-Serif;
+    Font-Size: 44px;
+    text-align: center;
+}
+
+h2{
+    Font-Family: 'Raleway', Sans-Serif;
+    Font-Size: 44px;
+    text-align: center;
+}
+
+/* PRIMER JUEGO DE COLORES */
+
+.btn-box{
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.btn{
+    Font-Family: 'Open Sans', Sans-Serif;
+    Font-Size: 40px;
+    text-transform: uppercase;
+    text-shadow: 4px 2px 5px #424141;
+    color: aliceblue;
+    width: 160px;
+    height: 150px;
+    Font-Family: 'Open Sans', Sans-Serif;
+    Font-Size: 15px;    
+    margin: 5px;
+}
+
+.btn-rojo{
+    background-color: red;
+}
+
+.btn-verde{
+    background-color: rgb(103, 245, 81);
+}
+
+.btn-azul{
+    background-color: rgb(73, 161, 255);
+}
+
+.btn-amarillo{
+    background-color: rgb(246, 246, 0);
+}
+
+.btn-violeta{
+    background-color: rgb(213, 85, 255);
+}
+
+.btn-rosa{
+    background-color: rgb(255, 161, 250);
+}
+
+.btn-naranja{
+    background-color: rgb(250, 161, 60);
+}
+
+.btn-turquesa{
+    background-color: rgb(0, 247, 255);
+}
+
+
+/* SEGUNDO JUEGO DE CAMINITO */
+
+div.juegoColores{
+    margin: 100px 50px;
+}
+
+div.juegoFrutilla{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+div.contenedor{
+    justify-content: center;
+    width: 100%;
+    display:flex;
+    
+}
+
+
+ .contenedorIzq{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedorDer{
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caja{
+    background-color: rgba(34, 34, 144, 0.832);
+    margin: 4px;
+    display: flex;
+}
+
+.caja1{
+    width: 140px;
+    height: 140px;
+
+}
+
+.caja2{
+    width: 140px;
+    height: 140px;
+}
+
+.caja3{
+    width: 290px;
+    height: 140px;
+}
+
+.caja4{
+    width: 290px;
+    height: 140px;
+}
+
+.caja5{
+    width: 140px;
+    height:290px;
+}
+
+.caja6{
+    width: 140px;
+    height: 140px;
+}
+
+.frutilla{
+    align-items: center;
+    height: 200px;
+    margin-top: 200px;
+}
+.frutilla img{
+    width: 200px;
+    
+}
+
+.flecha img{
+    width: 100px;
+    margin-left: 340px;
+}

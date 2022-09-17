@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="juegoColores">
+        <h1>Adivina en que color estoy pensando</h1>
+
+        <div class="btn-box">
+            <button class="btn btn-rojo" id="btnIncorrecto1" >Rojo</button>
+            <button class="btn btn-verde" id="btnIncorrecto2" >Verde</button>
+            <button class="btn btn-azul" id="btnIncorrecto3" >Azul</button>
+            <button class="btn btn-amarillo" id="btnIncorrecto4" >Amarillo</button>
+            <button class="btn btn-violeta" id="btnIncorrecto5">Violeta</button>
+            <button class="btn btn-rosa" id="btnIncorrecto6" >Rosa</button>
+            <button class="btn btn-naranja" id="btnCorrecto">Naranja</button>
+            <button class="btn btn-turquesa" id="btnIncorrecto7">Turquesa</button>
+        </div>
+    
+    </div>
+
+    <div class="juegoFrutilla">
+        <h2>Llega hasta la frutilla sin tocar los bordes mas de 10 veces</h2>
+        
+            <div class="flecha">
+                <img src="flecha.png" alt="">
+            </div>
+
+        <div class="contenedor">
+
+            <div class="contenedorIzq">
+                <div class="caja caja1" id="bordeCaja"></div>
+                <div class="caja caja2" id="bordeCaja2"></div>
+                <div class="caja caja3" id="bordeCaja3"></div>
+                <div class="caja caja4" id="bordeCaja4"></div>
+            </div>
+            <div class="contenedorDer">
+                <div class="caja caja5" id="bordeCaja5"></div>
+                <div class="caja caja6" id="bordeCaja6"></div>
+            </div>
+
+            <div class="frutilla" id="llegadaFrutilla">
+                <img src="frutilla.jpg" alt="frutilla">
+            </div>
+        </div>
+    </div>
+    <script src="eventos.js"></script>
+</body>
+</html>
