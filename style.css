@@ -17,7 +17,19 @@ h2{
     text-align: center;
 }
 
+h3{
+    Font-Family: 'Raleway', Sans-Serif;
+    font-size: 30px;
+    text-align: center;
+}
+
 /* PRIMER JUEGO DE COLORES */
+
+.volverIntentar{
+    width: 160px;
+    padding: 10px;
+    justify-content: center;
+}
 
 .btn-box{
     width: 100%;
@@ -72,11 +84,17 @@ h2{
 }
 
 
+
 /* SEGUNDO JUEGO DE CAMINITO */
 
 div.juegoColores{
     margin: 100px 50px;
 }
+
+.contadorToques{
+    color: rgb(246, 74, 74);
+}
+
 
 div.juegoFrutilla{
     margin-top: 200px;
@@ -155,4 +173,12 @@ div.contenedor{
 .flecha img{
     width: 100px;
     margin-left: 340px;
+}
+
+
+/* FOMRULARIO JUGADORES */
+
+.formulario{
+    padding: 80px;
+    background-color: rgb(100, 251, 251);
 }

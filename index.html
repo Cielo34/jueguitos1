@@ -12,7 +12,9 @@
 <body>
     <div class="juegoColores">
         <h1>Adivina en que color estoy pensando</h1>
-
+        <h3>Tenes 3 chances</h3>
+        <button id="volverIntentar">Volver a intentar</button>
+        
         <div class="btn-box">
             <button class="btn btn-rojo" id="btnIncorrecto1" >Rojo</button>
             <button class="btn btn-verde" id="btnIncorrecto2" >Verde</button>
@@ -26,9 +28,19 @@
     
     </div>
 
+
+
+
+<!-- JUEGO FRUTILLA -->
+
+
     <div class="juegoFrutilla">
-        <h2>Llega hasta la frutilla sin tocar los bordes mas de 10 veces</h2>
+        <h2>Llega hasta la frutilla sin tocar los bordes mas de 10 veces. Usar la mano IZQUIERDA</h2>
+        <h3 class="contadorToques">Toques:</h3>
+        <h3 class="contadorToques" id="counter-label">0</h3>
         
+        <button id="reset">Reset</button>
+
             <div class="flecha">
                 <img src="flecha.png" alt="">
             </div>
@@ -36,14 +48,14 @@
         <div class="contenedor">
 
             <div class="contenedorIzq">
-                <div class="caja caja1" id="bordeCaja"></div>
-                <div class="caja caja2" id="bordeCaja2"></div>
-                <div class="caja caja3" id="bordeCaja3"></div>
-                <div class="caja caja4" id="bordeCaja4"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja1" id="bordeCaja"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja2" id="bordeCaja2"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja3" id="bordeCaja3"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja4" id="bordeCaja4"></div>
             </div>
             <div class="contenedorDer">
-                <div class="caja caja5" id="bordeCaja5"></div>
-                <div class="caja caja6" id="bordeCaja6"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja5" id="bordeCaja5"></div>
+                <div onmouseover="increment()" id="counter-label" class="caja caja6" id="bordeCaja6"></div>
             </div>
 
             <div class="frutilla" id="llegadaFrutilla">
@@ -51,6 +63,44 @@
             </div>
         </div>
     </div>
+
+<!-- fomrulario de jugadores -->
+
+
+
+<div class="formulario">
+    <h3>Regsitro de jugadores de la frutilla</h3>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input id="edad" type="text">
+        <br><br>
+
+        <label for="toques">Cantidad de toques:</label>
+        <input id="toques" type="text">
+        <br><br>
+
+        <button>Guardar jugador</button>
+
+    </form>
+
+    <h3>Ver jugadas hechas</h3>
+    <br><br>
+    <button id="verJugadas">VER JUGADAS</button>
+    <div id="contenedorJugadas"></div>
+
+</div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="eventos.js"></script>
+
 </body>
 </html>
