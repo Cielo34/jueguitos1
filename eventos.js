@@ -91,6 +91,24 @@ btnCorrecto.addEventListener("click", () =>{
 })
 
 
+//Usando JSON PISTAS
+
+const pistas = document.getElementById("pistas");
+
+const pistasLista = "json/pistas.json"
+
+fetch(pistasLista)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach(producto => {
+            pistas.innerHTML += `<h3>Pista: ${producto.pista}</h3>`
+        })
+    })
+    .catch(error => console.log(error))
+    .finally(() => console.log("Proceso finalizado"));
+
+
+
 
 /**JUEGO DE CAMINITO */
 
